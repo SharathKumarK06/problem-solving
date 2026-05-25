@@ -4,14 +4,14 @@ import os
 
 
 def simpleArraySum(ar):
-    if not (0 <= len(ar) <= 1000):
+    if not (0 < len(ar) <= 1000):
         return
 
     items_sum = 0
     for i in ar:
-        items_sum += i
-        if 0 >= i >= 1000:
+        if 0 >= i or i > 1000:
             return
+        items_sum += i
 
     return items_sum
 
