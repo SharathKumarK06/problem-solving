@@ -10,7 +10,7 @@ def compareTriplets(a, b):
 
     # Check if any element of a or b out of bound
     for i in a + b:
-        if 1 >= i >= 100:
+        if not (1 <= i <= 100):
             return
 
     result = [0, 0]
