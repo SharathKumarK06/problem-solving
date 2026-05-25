@@ -6,7 +6,7 @@ max_limit = 10 ** 10
 
 
 def aVeryBigSum(ar):
-    if 1 >= len(ar) >= 10:
+    if not (1 <= len(ar) <= 10):
         return
 
     if all(0 > i or i > max_limit for i in ar):
